@@ -91,7 +91,7 @@ class SDXLPromptStyler:
     RETURN_TYPES = ('STRING','STRING',)
     RETURN_NAMES = ('text_positive','text_negative',)
     FUNCTION = 'prompt_styler'
-    CATEGORY = 'Azazeal'
+    CATEGORY = 'AegisFlow/stylers'
 
     def prompt_styler(self, text_positive, text_negative, log_prompt, **kwargs):
         text_positive_styled, text_negative_styled = text_positive, text_negative
@@ -129,7 +129,7 @@ class SDXLPromptStylerAdvanced:
     RETURN_TYPES = ('STRING','STRING','STRING','STRING','STRING','STRING',)
     RETURN_NAMES = ('text_positive_g','text_positive_l','text_positive','text_negative_g','text_negative_l','text_negative',)
     FUNCTION = 'prompt_styler_advanced'
-    CATEGORY = 'Azazeal'
+    CATEGORY = 'AegisFlow/stylers'
 
     def prompt_styler_advanced(self, text_positive_g, text_positive_l, text_negative, negative_prompt_to, log_prompt, **kwargs):
         text_positive_g_styled, text_positive_l_styled, text_negative_styled = text_positive_g, text_positive_l, text_negative
